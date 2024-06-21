@@ -8,12 +8,20 @@ export const getBlogs = async (req, res) => {
   res.status(200).json(blogs);
 };
 
+// @desc    Get blog
+// @route   GET /api/blogs/:id
+// @access  Public
+export const getBlog = async (req, res) => {
+  const blog = await Blog.findById(req.params.id);
+  res.status(200).json(blog);
+};
+
 // @desc    Set blogs
 // @route   POST /api/blogs
 // @access  Public
 export const postBlog = async (req, res) => {
-  const { name, blog } = req.body;
-  const newBlog = await Blog.create({ name, blog });
+  const { title, name, description } = req.body;
+  const newBlog = await Blog.create({ title, name, description });
   res.status(201).json(newBlog);
 };
 
