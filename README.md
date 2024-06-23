@@ -6,11 +6,10 @@ blog app using mongodb, express, react, nodejs
 
 ```
 # server deps
-npm install
+npm run install-server
 
 # client deps
-cd client
-npm install
+npm run install-client
 ```
 
 ### Run App
