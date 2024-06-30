@@ -44,9 +44,7 @@ function UpdateBlog() {
   return (
     <section className="bg-white ">
       <div className="py-8 px-4 mx-auto max-w-2xl lg:py-16">
-        <h2 className="mb-4 text-xl font-bold text-gray-900 ">
-          Add a new blog
-        </h2>
+        <h2 className="mb-4 text-xl font-bold text-gray-900 ">Update blog</h2>
         <form onSubmit={handleSubmit}>
           <div className="grid gap-4 sm:grid-cols-2 sm:gap-6">
             <div className="sm:col-span-2">
@@ -107,7 +105,7 @@ function UpdateBlog() {
             type="submit"
             className="inline-flex items-center px-5 py-2.5 mt-4 sm:mt-6 text-sm font-medium text-center text-white bg-blue-700 rounded-lg focus:ring-4 focus:ring-blue-200  hover:bg-blue-800"
           >
-            Add blog
+            Update blog
           </button>
         </form>
       </div>
